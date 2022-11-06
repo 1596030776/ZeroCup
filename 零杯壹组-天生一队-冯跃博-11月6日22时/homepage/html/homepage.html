@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="../css/hp.css">
+    <link rel="stylesheet" href="../css/hp2.css" />
+</head>
+
+<body>
+    <!-- 上半部分首页 -->
+    <div class="app">
+        <div class="spaceEye"><img src="../images/spaceEye.png"></div>
+        <div class="cardList">
+            <button class="cardList__btn btn btn--left">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-left"></use>
+                    </svg>
+                </div>
+            </button>
+
+            <div class="cards__wrapper">
+                <div class="card current--card">
+                    <div class="card__image">
+                        <img src="../images/diyue2.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="card next--card">
+                    <div class="card__image">
+                        <img src="../images/taikongzhan.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="card previous--card">
+                    <div class="card__image">
+                        <img src="../images/zhongguohangtian.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <button class="cardList__btn btn btn--right">
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+
+        <div class="infoList">
+            <div class="info__wrapper">
+                <div class="info current--info">
+                    <h1 class="text name">地球之外</h1>
+                    <h4 class="text location">探索太空</h4>
+                    <p class="text description">
+                        星空浩瀚无比，探索永无止境; <br />
+                        我们的征途是星辰大海！
+                    </p>
+                </div>
+
+                <div class="info next--info">
+                    <h1 class="text name">中国太空站</h1>
+                    <h4 class="text location">太空巡游</h4>
+                    <p class="text description">
+                        一梦一诺一征程，且吟且行且乘风。<br />
+                        神箭冲碧宇，天和傲苍穹。
+                    </p>
+                </div>
+
+                <div class="info previous--info">
+                    <h1 class="text name">中国航天</h1>
+                    <h4 class="text location">火箭升空</h4>
+                    <p class="text description">
+                        中国人将更好地探索，<br />
+                        拥抱这深邃宇宙,为中国梦插上腾飞的翅膀。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="app__bg">
+            <div class="app__bg__image current--image">
+                <img src="../images/diyue2.jpg" alt="" />
+            </div>
+            <div class="app__bg__image next--image">
+                <img src="../images/taikongzhan.jpg" alt="" />
+            </div>
+            <div class="app__bg__image previous--image">
+                <img src="../images/zhongguohangtian.jpg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <div class="loading__wrapper">
+        <div class="loader--text">加载中...</div>
+        <div class="loader">
+            <span></span>
+        </div>
+    </div>
+
+    <svg class="icons" style="display: none">
+        <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <polyline points="328 112 184 256 328 400" style="
+              fill: none;
+              stroke: #fff;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-width: 48px;
+            " />
+        </symbol>
+        <symbol id="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <polyline points="184 112 328 256 184 400" style="
+              fill: none;
+              stroke: #fff;
+              stroke-linecap: round;
+              stroke-linejoin: round;
+              stroke-width: 48px;
+            " />
+        </symbol>
+    </svg>
+
+    <!-- 下半部分首页 -->
+    <div class="part2">
+        <div class="Home">
+            <div class="Home-wrapper js-Home-desktop-wrapper">
+                <section class="Side-left js-Side-left">
+                    <div class="Side-left-wrapper">
+                        <div class="Side-left-image js-Side-left-image">
+                            <a href="../../spaceStation/page2.html"><img src="../images/title1.png" class="title1"></a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Side-right">
+                    <div class="Side-right-image js-Side-right-image">
+                        <a href="../../history/myindex.html"><img src="../images/title2.png" class="title2"></a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/hp.js"></script>
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/gsap.min.js"></script>
+    <script src="../js/hp2.js"></script>
+</body>
+
+</html>

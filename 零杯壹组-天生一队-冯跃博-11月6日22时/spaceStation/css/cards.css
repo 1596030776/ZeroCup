@@ -1,0 +1,79 @@
+.scene {
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    justify-content: right;
+    /* perspective: 800px; */
+    perspective: 100vw;
+}
+
+.scene .card {
+    position: relative;
+    top: 3vh;
+    right: 1vw;
+    width: 21vw;
+    height: 51vh;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.scene .card:active {
+    transform: rotateY(0.5turn);
+}
+
+.scene .card .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: 1s ease-in-out;
+    -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+}
+
+.scene .card .card__face img {
+    width: 19vw;
+    height: 51vh;
+    object-fit: cover;
+}
+
+.scene .card .card__face--back {
+    transform: rotateY(0.5turn);
+}
+
+.msg {
+    position: absolute;
+    z-index: 1;
+    width: 25vw;
+    height: 66vh;
+    display: none;
+    pointer-events: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 1.5vw;
+    animation: fadeIn 1.9s 1;
+}
+
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.msg1 {
+    background-color: rgba(24, 24, 24, 0.69);
+    left: 3vw;
+    top: 16vh;
+}
+
+.msg2 {
+    background-color: rgba(24, 24, 24, 0.69);
+    left: 23vw;
+    top: 22vh;
+}
+
+.msg3 {
+    background-color: rgba(24, 24, 24, 0.69);
+    left: 43vw;
+    top: 22vh;
+}

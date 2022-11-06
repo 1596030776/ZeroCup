@@ -1,0 +1,50 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.wrap {
+  width: 50%;
+  float: left;
+}
+
+.pull {
+  cursor: default;
+  top: 80vh;
+  left: 40vw;
+}
+
+.btn-6 {
+  color: rgb(199, 109, 162);
+  line-height: 6vw;
+  font-size: 2vw;
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  width: 20vw;
+  height: 12vh;
+  text-transform: uppercase;
+  border: 0.2vw solid currentColor;
+  z-index: 6;
+}
+.btn-6 span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: rgb(174, 36, 116);
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+.btn-6:hover {
+  color: #cee6d0;
+}
+.btn-6:hover span {
+  width: 225%;
+  height: 35vw;
+}

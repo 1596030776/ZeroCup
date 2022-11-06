@@ -1,0 +1,70 @@
+.btn {
+    position: relative;
+    width: 4vw;
+    height: 7.4vh;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: inset 0.3em -0.3em rgba(242, 255, 63, 0.362);
+    animation: spin 1.5s linear infinite;
+    z-index: 3;
+}
+.btn::before, .btn::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    box-shadow: inherit;
+}
+.btn::before {
+    filter: blur(4px);
+}
+.btn::after {
+    filter: blur(10px);
+}
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+/* 货运 */
+.b1 {
+    position: absolute;
+    left: 47vw;
+    top: 58vh;
+}
+/* 实验2 */
+.b2 {
+    position: absolute;
+    left: 28vw;
+    top: 58vh;
+}
+/* 载人 */
+.b3 {
+    position: absolute;
+    left: 20.3vw;
+    top: 18.5vh;
+}
+/* 核心 */
+.b4 {
+    position: absolute;
+    left: 68vw;
+    top: 40vh;
+}
+/* 实验1 */
+.b5 {
+    position: absolute;
+    left: 75vw;
+    top: 23vh;
+}
+
+.btn:hover {
+    box-shadow: inset 0.3em -0.3em rgb(242, 255, 63);
+    background: rgba(128, 128, 128, 0.114);
+    cursor:pointer;
+}
+.btn:active {
+    box-shadow: inset 0.3em -0.3em rgba(255, 234, 9, 0.46);
+    background: transparent;
+}

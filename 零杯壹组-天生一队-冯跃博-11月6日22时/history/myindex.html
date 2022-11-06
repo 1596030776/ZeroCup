@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./mystyle.css">
+  <script src="./history.js" type="text/javascript"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="slide sticky">
+      <div class="video-box">
+        <video class="video-background" preload="auto" loop playsinline autoplay src="./image/video-1.mp4" tabindex="-1"
+          muted="muted"></video>
+      </div>
+      <div class="start">
+        <div class="begin">
+          <div class="foot text" id="foot">中国航天 辉煌足迹</div>
+          <a href="#target" class="sail text" id="sail">启航</a>
+        </div>
+      </div>
+      <!-- <div class="begin">启航</div> -->
+    </div>
+  </div>
+  <div class="history">
+    <div class="bkgimg">
+      <video id="target" class="img1" preload="auto" loop playsinline autoplay src="./image/video-2.mp4" tabindex="-1"
+        muted="muted"></video>
+      <img src="./image/rocket.jpg" class="img2">
+      <div class="blank">
+        <div class="imghead">中国航天一览</div>
+        <div class="shell">
+          <div class="box">
+            <img src="./image/h1.png" id="i1" onmousemove="over1(this)" onmouseleave="leave1(this)">
+            <span>东方红一号</span>
+          </div>
+          <div class="box">
+            <img src="./image/h2.png" id="i2" onmousemove="over2(this)" onmouseleave="leave2(this)">
+            <span>神舟一号</span>
+          </div>
+          <div class="box">
+            <img src="./image/h3.png" id="i3" onmousemove="over3(this)" onmouseleave="leave3(this)">
+            <span>神舟五号</span>
+          </div>
+          <div class="box">
+            <img src="./image/h4.png" id="i4" onmousemove="over4(this)" onmouseleave="leave4(this)">
+            <span>嫦娥一号</span>
+          </div>
+          <div class="box">
+            <img src="./image/h5.png" id="i5" onmousemove="over5(this)" onmouseleave="leave5(this)">
+            <span>天宫一号</span>
+          </div>
+        </div>
+        <div class="imgfoot">
+          <span class="b1">1970年4月24日中国发射的第一颗人造卫星</span>
+          <span class="b2">1999年11月20日中国发射的第一艘无人试验飞船</span>
+          <span class="b3">2003年10月15日中国发射的第一艘载人飞船</span>
+          <span class="b4">2007年10月24日中国首颗探月卫星成功奔月</span>
+          <span class="b5">2011年9月29日中国首个自主研制的载人空间试验平台发射成功</span>
+        </div>
+      </div>
+      <video class="scrvid" preload="auto" loop playsinline autoplay src="./image/video-4.mp4" tabindex="-1"
+        muted="muted"></video>
+      <div class="scroll">
+        <div class="left">
+          <div class="l1 scr">
+            <div class="boxscr">
+              <div class="img1">
+                <a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9/3878653">
+                  <img src="./image/l1.png" href=""></a>
+              </div>
+              <div class="content">
+                魏晋南北朝，敦煌“飞天”壁画。在中国的飞天多画在墓室壁画中，象征着墓室主人的灵魂能羽化升天。中国人民自古以来便有对太空的向往
+              </div>
+            </div>
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+          </div>
+
+          <div class="l2 scr">
+            <div class="boxscr">
+              <div class="img1">
+                <a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9/3878653">
+                  <img src="./image/l2.png" href=""></a>
+              </div>
+              <div class="content">
+                1960年2月19日，我国自行设计制造的“T-7M”试验型液体探空火箭在上海市首次发射成功，飞行高度8千米，迈出了中国探空火箭技术的第一步。
+              </div>
+            </div>
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+          </div>
+
+
+          <div class="l2 scr">
+            <div class="boxscr">
+              <div class="img1">
+                <a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9/3878653">
+                  <img src="./image/l3.png" href=""></a>
+              </div>
+              <div class="content">
+                1975年11月26日,中国首颗返回式卫星，在酒泉卫星发射中心发射成功 。卫星收放自如，我国成为世界上第三个掌握卫星返回技术的国家。
+              </div>
+            </div>
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+          </div>
+
+          <div class="l2 scr">
+            <div class="boxscr">
+              <div class="img1">
+                <a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9/3878653">
+                  <img src="./image/1999.png" href=""></a>
+              </div>
+              <div class="content">
+                1999年11月20日,中国第一艘无人试验飞船神舟一号飞船搭乘长征二号F运载火箭，我国载人航天工程第一次无人飞行试验取得圆满成功。
+              </div>
+            </div>
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+          </div>
+
+          <div class="l2 scr">
+            <div class="boxscr">
+              <div class="img1">
+                <a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9/3878653">
+                  <img src="./image/2007.png" href=""></a>
+              </div>
+              <div class="content">
+                2007年10月24日,探月工程“嫦娥一号”成功发射升空，前往月球。嫦娥工程分为“无人月球探测”“载人登月”和“建立月球基地”三个阶段。
+              </div>
+            </div>
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+          </div>
+
+          <div class="l2 scr">
+            <div class="boxscr">
+              <div class="img1">
+                <a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9/3878653">
+                  <img src="./image/2019.png" href=""></a>
+              </div>
+              <div class="content">
+                2019年1月3日，
+
+                “嫦娥四号”探测器成功登陆月球，这是人类探测器首次造访月球背面，是航天事业发展的一座里程碑。
+
+
+              </div>
+            </div>
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+          </div>
+
+
+          <div class="scrfoot">
+            赴九天，问苍穹<br>
+
+            我们始终没有忘记<br>
+
+            我们的征途是星辰大海
+          </div>
+
+        </div>
+
+        <div class="middle">
+          <span class="time">时光穿梭</span>
+        </div>
+        <div class="right">
+          <div class="r1 scr" style="margin-top: 250px;">
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+            <div class="boxscr">
+              <div class="img1">
+                <a href="https://baike.baidu.com/item/%E9%A3%9E%E5%A4%A9/3878653">
+                  <img src="./image/r1.png" href=""></a>
+              </div>
+              <div class="content">
+                明朝，万户飞天。万户为了实现自己的航天梦想，坐在绑上了47支火箭的椅子上，手里拿着风筝，飞向天空。但是火箭在高空爆炸了，万户也为此献出了生命。
+              </div>
+            </div>
+
+          </div>
+          <div class="r1 scr">
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+            <div class="boxscr">
+              <div class="img1">
+                <img src="./image/h1.png" href="">
+              </div>
+              <div class="content">
+                1970年4月24日，首次发射的长征一号运载火箭成功地将第一颗人造卫星“东方红一号”送入预定轨道
+              </div>
+            </div>
+          </div>
+
+          <div class="r1 scr">
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+            <div class="boxscr">
+              <div class="img1">
+                <img src="./image/1981.jpg" href="">
+              </div>
+              <div class="content">
+                1981年9月20日,掌握一箭多星。中国成功地用一枚运载火箭发射了3颗科学实验卫星（三颗卫星分别是实践二号、实践二号甲、实践二号乙），这种“一箭三星”技术当时在世界引起轰动。
+              </div>
+            </div>
+          </div>
+
+          <div class="r1 scr">
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+            <div class="boxscr">
+              <div class="img1">
+                <img src="./image/2003.png" href="">
+              </div>
+              <div class="content">
+                2003年10月15日,我国成功进行了第一次载人航天飞行，中国第一艘载人飞船神舟五号成功发射，中国首位航天员杨利伟成为浩瀚太空的第一位中国访客,中国人首次飞天圆满成功。
+              </div>
+            </div>
+          </div>
+
+          <div class="r1 scr">
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+            <div class="boxscr">
+              <div class="img1">
+                <img src="./image/2012.png" href="">
+              </div>
+              <div class="content">
+                2012年6月22日，中国首次手控交会对接任务成功，标志着我国成为世界上第三个独立自主全面掌握交会对接技术的国家。
+              </div>
+            </div>
+          </div>
+
+          <div class="r1 scr">
+            <div class="line">
+              <div class="line1"> </div>
+              <div class="line2"> </div>
+            </div>
+            <div class="boxscr">
+              <div class="img1">
+                <img src="./image/2020.png" href="">
+              </div>
+              <div class="content">
+                2020年4月24日我国行星探测任务正式命名为“天问”，将我国首次火星探测任务命名为“天问一号”，顺利降落在火星乌托邦平原。
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background-color: black;
+}
+.Home {
+    display: block;
+}
+
+.part2 {
+    margin-top: -2vh;
+}
+
+.Home-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.title1 {
+    position: absolute;
+    width:26vw;
+    height: 95vh;
+    left: 44vw;
+    cursor: pointer;
+}
+.title2 {
+    position: absolute;
+    width:27vw;
+    height: 90vh;
+    top: 10vh;
+    left: 56vw;
+    cursor: pointer;
+}
+
+.Side-left {
+    background-color: #5a5a5a;
+    height: 100%;
+    left: -100%;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    transform: skew(-45deg);
+    width: 150%;
+    z-index: 5;
+}
+
+.Side-left-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.Side-left-image {
+    box-shadow: 0 0 55vw 25vw rgba(0, 0, 0, 0.7) inset; 
+    background: url(../images/tiangong.png) center no-repeat;
+    background-size: cover;
+    left: 50%;   
+    top: 0;
+    position: relative;
+    transform: skew(45deg);
+    width: 130vw;   
+    height: 100vh;
+}
+
+.Side-right {
+    width: 105%;
+    height: 100%;
+    position: relative;
+    background-color: #00000098;
+}
+
+.Side-right-image {
+    box-shadow: 0 0 55vw 20vw rgba(0, 0, 0, 0.7) inset; 
+    position: relative;
+    top: 0;
+    right: 0vw;
+    width: 110vw;
+    height: 100vh;
+    background: url(../images/dongfanghong.jfif) center no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+
+    .Side-left {
+        top: -65%;
+        left: 0;
+        transform: skewY(-35deg);
+        width: 100%;
+    }
+
+    .Side-left-image {
+        background-size: 65%;
+        left: 0;
+        top: 50%;
+        transform: skewY(35deg);
+    }
+
+    .Side-right-image {
+        top: -15%;
+        background-size: 65%;
+    }
+
+}
